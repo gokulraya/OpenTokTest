@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>OpenTok Hello World</title>
+    <script src="https://static.opentok.com/v2/js/opentok.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <link href="../public/css/app.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap-theme.min.css">
+
+    <script type="text/javascript">
+        var apiKey = '<%= apiKey %>';
+        var sessionId = '<%= sessionId %>';
+        var token = '<%= token %>';
+    </script>
+    <script src="/js/helloworld.js"></script>
+</head>
+
+<body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner justify-content-center">
+                <h3 class="masthead-brand text-center">OpenTok API Test</h3>
+
+            </div>
+        </header>
+        <br>
+        <br>
+        <br>
+        <main role="main" class="inner cover">
+             <h1 class="cover-heading">Client Server with Archiving</h1>
+             <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+       
+            <p class="lead">
+                <button class="start btn btn-danger">Archive Session</button>
+                <button class="stop btn btn-success">Stop Archive Session</button>
+            </p>
+        </main>
+        <p class="lead">
+            <div id="publisher"></div>
+
+            <div id="subscribers"></div>
+        </p>
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
